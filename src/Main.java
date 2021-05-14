@@ -1,8 +1,7 @@
 
 
 import javax.swing.JFrame;
-import javax.swing.JLabel;
-import java.awt.*;
+
 public class Main extends JFrame
 {
     public Main()
@@ -11,6 +10,8 @@ public class Main extends JFrame
         setSize(1600,1200);    //设置窗口显示尺寸
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    //置窗口是否可以关闭
         setVisible(true);    //设置窗口是否可见
+        Time_Walker time_walker=new Time_Walker("Time Walker 1");
+        time_walker.print_time();
     }
     public static void main(String[] agrs)
     {
