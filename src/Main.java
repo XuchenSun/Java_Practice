@@ -1,30 +1,19 @@
-/*
-* @author: Xuchen
-* write a program show the time.
-*
-*
-* */
-import java.util.Calendar;
-import java.util.Date;
-import java.text.SimpleDateFormat;
-import java.util.Locale;
-
-import static java.util.Locale.CHINA;
-
-public class Main {
-
-    public static void main(String[] args) {
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//set the format of time
-        Date localTime=new Date();
-
-        System.out.println("St.John's Time: "+df.format(localTime));// print time
 
 
-        Calendar calendar = Calendar.getInstance(CHINA);
-        Date time = calendar.getTime();
-        SimpleDateFormat data = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String format = data.format(time);
-        System.out.println(format);
-
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import java.awt.*;
+public class Main extends JFrame
+{
+    public Main()
+    {
+        setTitle("ML Set");    //设置显示窗口标题
+        setSize(1600,1200);    //设置窗口显示尺寸
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    //置窗口是否可以关闭
+        setVisible(true);    //设置窗口是否可见
+    }
+    public static void main(String[] agrs)
+    {
+        new Main();    //创建一个实例化对象
     }
 }
