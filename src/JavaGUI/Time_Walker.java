@@ -1,11 +1,10 @@
-/*
+package JavaGUI;/*
  * @author: Xuchen
  * @Class Name: Time_Walker
  * @Class function: Display Time
  */
 
 import java.text.SimpleDateFormat;
-
 import java.util.Date;
 
 
