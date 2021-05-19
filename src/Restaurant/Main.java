@@ -48,6 +48,16 @@ public class Main extends JFrame
         Kitchen_helper kitchen_helper1=new Kitchen_helper();
         kitchen_helper1.add_sauce_based_on_order(food_based_on_order1);
         final_product1=kitchen_helper1.package_order(food_based_on_order1);
+        final_product1=kitchen_helper1.delivery_food_to_waiter(final_product1);
+
+        /*--------------------Step5: Customer Paid and Deliver Final Product---------------------------------------*/
+        int money_of_order1=0;
+        int money_of_toal=0;
+        final_product1=waiter1.get_final_product(final_product1);
+        money_of_order1=customer1.pay_for_order(50);
+        money_of_toal=money_of_toal+money_of_order1;
+        waiter1.deliver_final_product_to_customer(final_product1);
+
 
         new Main();    //display page
 

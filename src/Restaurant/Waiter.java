@@ -7,4 +7,12 @@ public class Waiter {
     public void deliver_order_to_chef(){
 
     }
+    public String get_final_product(String order){
+        return order;
+    }
+    public void deliver_final_product_to_customer(String order){
+
+    }
+
+
 }

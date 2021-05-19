@@ -5,4 +5,7 @@ public class Customer {
 
         return order;
     }
+    public int pay_for_order(int money){
+        return money;
+    }
 }
